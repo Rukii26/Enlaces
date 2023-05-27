@@ -1,0 +1,160 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+ }
+
+ body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .fondo{
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   z-index: -1;
+ }
+
+ .fondo-color{
+   width:100%;
+   height: 40%;
+   background-color: #b3d9ff;
+ }
+
+ .fondo-blanco{
+   width: 100%;
+   height: 60%;
+   background-color: #EFEFEF;
+ }
+
+ .tarjeta {
+    background-color: white;
+    max-width: 90vw;
+    height: max-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    border-radius: 15px;
+   }
+
+.nombre-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .descripcion{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px 20px 0px 20px;
+ }
+
+ .descripcion > img{
+   margin: 20px;
+   border-radius: 50%;
+ }
+
+ .descripcion > p{
+   text-align: center;
+   line-height: 22px;
+ }
+
+ .botones-sociales{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .btn-social{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 15px;
+   text-decoration: none;
+   color: black;
+   font-weight: bolder;
+   background-color: black;
+ }
+
+.pie-pagina{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.btn-tiktok{
+  background: linear-gradient(to right,#69C9D0, #EE1D52);
+}
+
+.btn-youtube{
+  background: linear-gradient(to right, red, white);
+}
+
+.btn-paypal{
+  background: linear-gradient(to right, #003087, #009CDE);
+}
+
+.btn-instagram{
+  background: linear-gradient(to right, #833AB4, #FD1D1D, #FCAF45);
+}
+
+.btn-github{
+  background: linear-gradient(to right, #000000, #ffffff);
+}
+
+.btn-snap{
+  background: linear-gradient(to right, #FFFF00, #FFFFFF);
+}
+
+.btn-bereal{
+  background: linear-gradient(to right, #B31B1B, #FCC307);
+}
+
+@media screen and (min-width: 760px) {
+ main{
+  min-height: 100vh;
+  justify-content: center;
+ }
+
+ .tarjeta{
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  max-width: 900px;
+ }
+
+ .descripcion{
+  flex-direction: column-reverse;
+  grid-column: 1/2;
+  grid-row: 1/2;
+ }
+
+ .nombre-usuario{
+  grid-column: 1/2;
+  grid-row: 2/3;
+ }
+
+ .botones-sociales{
+  grid-column: 2/3;
+  grid-row: 1/3;
+ }
+
+ .pie-pagina{
+  grid-column: 1/3;
+  grid-row: 3/4;
+ }
+}
+
+ 
